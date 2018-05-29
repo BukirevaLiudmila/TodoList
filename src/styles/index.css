@@ -1,12 +1,14 @@
 li {
 	list-style: none;
-	padding-left: 24px;
+	padding-left: 40px;
+	margin-bottom: 10px;
 }
 
 li.icon-blank {
-	background: url(../images/checkbox-blank.png) no-repeat 0 4px;
+	background: url(../images/checkbox-blank.png) no-repeat;
 }
 
 li.icon-marked {
-	background: url(../images/checkbox-marked.png) no-repeat 0 4px;
+	background: url(../images/checkbox-marked.png) no-repeat;
+	font-style: italic;
 }

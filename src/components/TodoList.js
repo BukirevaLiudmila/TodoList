@@ -31,6 +31,21 @@ class TodoList extends React.Component {
         };
     }
 
+    toggleTodo(todoId) {
+        this.setState(prevState => ({
+            todos: prevState.todos.map(todo => {
+                if (todo.id === todoId) {
+                    return {
+                        id: todo.id,
+                        text: todo.text,
+                        completed: !todo.completed
+                    };
+                }
+                return todo;
+            })
+        }));
+    }
+
     render() {
         return (
             <ul>
@@ -38,7 +53,7 @@ class TodoList extends React.Component {
                     <Todo
                         key={todo.id}
                         {...todo}
-                        onClick={() => toggleTodo(todo.id)}
+                        onClick={() => this.toggleTodo(todo.id)}
                     />
                 )}
             </ul>
