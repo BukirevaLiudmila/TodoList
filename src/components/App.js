@@ -1,12 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import TodoList from './TodoList';
 import '../styles/index.css';
+import TodoList from './TodoList';
+import Header from './Header';
 
-const App = () => (
-    <div>
-        <TodoList/>
-    </div>
-);
+
+const App = () => [<Header/>, <TodoList/>];
 
 export default App;

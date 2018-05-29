@@ -36,8 +36,7 @@ class TodoList extends React.Component {
             todos: prevState.todos.map(todo => {
                 if (todo.id === todoId) {
                     return {
-                        id: todo.id,
-                        text: todo.text,
+                        ...todo,
                         completed: !todo.completed
                     };
                 }
