@@ -1,0 +1,12 @@
+li {
+	list-style: none;
+	padding-left: 24px;
+}
+
+li.icon-blank {
+	background: url(../images/checkbox-blank.png) no-repeat 0 4px;
+}
+
+li.icon-marked {
+	background: url(../images/checkbox-marked.png) no-repeat 0 4px;
+}
