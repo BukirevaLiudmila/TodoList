@@ -4,6 +4,7 @@ import '../styles/index.css';
 import generateId from '../helpers/generateId';
 import TodoList from './TodoList';
 import Header from './Header';
+import Input from './Input';
 
 class App extends React.Component {
     constructor(props) {
@@ -53,7 +54,13 @@ class App extends React.Component {
             todos: prevState.todos.filter((todo) => !(todo.completed === true))
         }));
     }
-    
+
+    addTodo(newTodo) {
+        this.setState((prevState) => ({
+            todos: [...prevState.todos, newTodo]
+        }));
+    }
+
     render() {
         return [
             <Header
@@ -64,6 +71,10 @@ class App extends React.Component {
                 key={generateId()}
                 toggleTodo={(todoId) => this.toggleTodo(todoId)}
                 todos={this.state.todos}
+            />,
+            <Input
+                key={generateId()}
+                addTodo={(newTodo) => this.addTodo(newTodo)}
             />
         ];
     }

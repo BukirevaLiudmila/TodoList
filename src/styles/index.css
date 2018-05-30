@@ -1,5 +1,5 @@
 .wrap {
-	font-family: Arial sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 15px;
 	margin: 20px auto;
 	width: 300px;
@@ -31,6 +31,7 @@
 
 ul {
 	padding: 20px;
+	margin: 0;
 }
 
 li {
@@ -47,4 +48,22 @@ li.icon-blank {
 li.icon-marked {
 	background: url(../images/checkbox-marked.png) no-repeat;
 	font-style: italic;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.footer .plus {
+	width: 24px;
+	height: 24px;
+	background: url(../images/plus.png) no-repeat;
+	cursor: pointer;
+	margin: auto 0;
+}
+
+.footer input {
+	width: 87%;
 }
