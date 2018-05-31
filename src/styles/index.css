@@ -2,11 +2,12 @@
 	font-family: Arial, sans-serif;
 	font-size: 15px;
 	margin: 20px auto;
-	width: 300px;
+	width: 400px;
 	border: 1px gray solid;
 	border-radius: 5px;
 }
 
+/*Header*/
 .header {
 	background-color: #f5f5f5;
 	display: flex;
@@ -29,6 +30,7 @@
 	margin: auto 0;
 }
 
+/*TodoList*/
 ul {
 	padding: 20px;
 	margin: 0;
@@ -50,6 +52,7 @@ li.icon-marked {
 	font-style: italic;
 }
 
+/*Input*/
 .footer {
 	display: flex;
 	justify-content: space-between;
@@ -65,5 +68,5 @@ li.icon-marked {
 }
 
 .footer input {
-	width: 87%;
+	width: 90%;
 }
